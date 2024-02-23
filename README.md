@@ -1,88 +1,73 @@
-# qp-assessment
 
 # Grocery Booking System
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 ## Overview
 
-The Grocery Booking System is a backend web application built with Node.js, TypeScript, Express.js, Docker, and PostgreSQL. It aims to provide a robust solution for managing grocery orders, inventory, and user data efficiently.
+The Grocery Booking System is a robust Node.js TypeScript application designed to streamline the process of managing grocery orders. It leverages modern development practices and technologies to provide a scalable and maintainable backend solution.
 
-## Features
+## Key Features
 
-- **RESTful API**: Provides endpoints for managing grocery items, orders, and user data.
-- **Database Integration**: Utilizes PostgreSQL as the database management system for storing and managing data.
-- **Dockerized Deployment**: Enables seamless deployment and scalability using Docker containers.
-- **TypeScript Support**: Written in TypeScript to enhance code quality, readability, and maintainability.
-- **CRUD Operations**: Supports CRUD (Create, Read, Update, Delete) operations for managing grocery items, orders, and users.
-- **Error Handling**: Implements robust error handling mechanisms to ensure system stability and reliability.
-- **Unit Testing**: Includes Jest test cases to ensure the correctness of application logic and behavior.
+- **Express.js Server**: Utilizes Express.js to build a high-performance HTTP server, ensuring efficient handling of requests and responses.
+- **TypeScript Support**: Written in TypeScript to enhance code quality, maintainability, and developer productivity, enabling static type checking and improved tooling support.
+- **Dockerized Environment**: Utilizes Docker containers for seamless deployment and scaling, ensuring consistent behavior across different environments and simplifying infrastructure management.
+- **PostgreSQL Integration**: Integrates with PostgreSQL, a powerful relational database, for efficient data storage and retrieval, providing reliability and scalability for large-scale applications.
+- **Jest Testing**: Includes comprehensive test suites written with Jest, a popular testing framework, to ensure code correctness and maintainability through automated testing.
+- **RESTful API Design**: Adheres to RESTful principles for API design, promoting interoperability, scalability, and ease of integration with other systems.
 
-## Technologies Used
+## Prerequisites
 
-- **Node.js**: JavaScript runtime for building scalable server-side applications.
-- **TypeScript**: Superset of JavaScript that adds static typing and other features to improve developer productivity and code quality.
-- **Express.js**: Web application framework for Node.js, providing a robust set of features for building web APIs.
-- **PostgreSQL**: Powerful open-source relational database management system used for data storage and retrieval.
-- **Docker**: Containerization platform that simplifies the deployment and management of applications.
-- **Sequelize ORM**: Promise-based Node.js ORM for PostgreSQL, providing easy database management through JavaScript objects.
-- **Jest**: JavaScript testing framework for Node.js applications, used for writing and executing unit tests.
+Before running the project, ensure you have the following installed:
+
+- Node.js
+- Docker
+- Docker Compose
 
 ## Getting Started
 
-### Prerequisites
+1. **Clone the Repository**: Begin by cloning this repository to your local machine:
 
-- Node.js and npm
-- Docker
+```bash
+git clone https://github.com/Uditsingh7/qp-assessment.git
+```
 
-### Installation
+2. **Navigate to the Project Directory**: Move into the project directory:
 
-1. Clone the repository:
+```bash
+cd qp-assessment
+```
 
-   ```bash
-   git clone <repository-url>
-   ```
+3. **Configure Environment Variables**: Create a `.env` file based on the provided `.env.example` file, and update it with your PostgreSQL database credentials and other configuration settings:
 
-2. Navigate to the project directory:
+```bash
+cp .env.example .env
+```
 
-   ```bash
-   cd grocery-booking-system
-   ```
+4. **Start the Application**: Run the following command to start the application using Docker Compose:
 
-3. Install dependencies:
+```bash
+docker-compose up --build
+```
 
-   ```bash
-   npm install
-   ```
+5. **Access the Application**: Once the containers are up and running, access the application at [http://localhost:3000](http://localhost:3000).
 
-4. Start the application using Docker:
+## Testing
 
-   ```bash
-   docker-compose up --build
-   ```
+To run the test cases, execute the following command:
 
-5. The application should now be running and accessible at `http://localhost:3000`.
-
-## Usage
-
-1. Use API endpoints to interact with the system for managing grocery items, orders, and user data.
-2. Explore the codebase to understand the application structure, routes, controllers, models, and database interactions.
-3. Run Jest test cases to ensure the correctness of application logic and behavior:
-
-   ```bash
-   npm test
-   ```
-
-4. Customize and extend the application to fit your specific requirements, adding new features or modifying existing ones as needed.
+```bash
+npm test
+```
 
 ## Contributing
 
-Contributions are welcome! Feel free to submit bug fixes, improvements, or new features via pull requests.
+Contributions are welcome! Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute to the project.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the terms of the [MIT License](LICENSE).
 
 ## Acknowledgements
 
-Special thanks to OpenAI for providing the language model, which assisted in generating content for this README. The code and content have been customized and tailored for my project.
-
----
+Big thanks to OpenAI for assisting in crafting this README!
