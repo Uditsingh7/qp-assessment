@@ -1,7 +1,4 @@
 # qp-assessment
-Great! Here's an updated version of the README to include information about Jest test cases:
-
----
 
 # Grocery Booking System
 
