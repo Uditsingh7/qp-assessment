@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import sequelize from '../database/sequelize'; 
+import sequelize from '../database/sequelize';
 
 
 class User extends Model {
@@ -44,9 +44,9 @@ User.init(
         },
     },
     {
-        sequelize, 
-        modelName: 'User', 
-        tableName: 'user', 
+        sequelize,
+        modelName: 'User',
+        tableName: 'user',
         timestamps: true, // Enable timestamps
         underscored: true, // Use underscores instead of camelCase for automatically added attributes
     }
