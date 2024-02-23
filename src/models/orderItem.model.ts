@@ -61,6 +61,7 @@ OrderItem.init(
         schema: 'grocery_booking_schema',
         timestamps: true,
         modelName: 'OrderItem', 
+        underscored: true, // Use underscores instead of camelCase for automatically added attributes
     }
 );
 

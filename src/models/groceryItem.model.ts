@@ -1,7 +1,7 @@
 import { DataTypes, Model } from 'sequelize';
-import sequelize from '../database/sequelize'; 
+import sequelize from '../database/sequelize';
 
-class GroceryItem extends Model { 
+class GroceryItem extends Model {
     public id!: number;
     public name!: string;
     public price!: number;
@@ -30,9 +30,10 @@ GroceryItem.init(
     },
     {
         sequelize,
-        tableName: 'grocery_items', 
-        schema: 'grocery_booking_schema', 
+        tableName: 'grocery_items',
+        schema: 'grocery_booking_schema',
         timestamps: true,
+        underscored: true, // Use underscores instead of camelCase for automatically added attributes
     }
 );
 
