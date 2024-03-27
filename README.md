@@ -1,8 +1,6 @@
 
 # Grocery Booking System
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 ## Overview
 
 The Grocery Booking System is a robust Node.js TypeScript application designed to streamline the process of managing grocery orders. It leverages modern development practices and technologies to provide a scalable and maintainable backend solution.
