@@ -64,10 +64,4 @@ npm test
 
 Contributions are welcome! Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute to the project.
 
-## License
 
-This project is licensed under the terms of the [MIT License](LICENSE).
-
-## Acknowledgements
-
-Big thanks to OpenAI for assisting in crafting this README!
